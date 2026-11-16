@@ -1,0 +1,150 @@
+/* NEUROLECT AI - Modern Educational Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+    --primary-color: #2563eb;
+    --primary-light: #3b82f6;
+    --primary-dark: #1d4ed8;
+    --secondary-color: #10b981;
+    --accent-purple: #8b5cf6;
+    --accent-amber: #f59e0b;
+    --bg-dark: #0f172a;
+    --card-bg: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: #334155;
+}
+
+/* Global Font Styling */
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Hide Default Streamlit Multipage Navigation in Sidebar */
+[data-testid="stSidebarNav"],
+div[data-testid="stSidebarNav"],
+ul[data-testid="stSidebarNavItems"],
+section[data-testid="stSidebar"] div[data-testid="stSidebarNav"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0px !important;
+    overflow: hidden !important;
+}
+
+/* Hero Banner */
+.hero-container {
+    background: linear-gradient(135deg, #1e3a8a 0%, #312e81 50%, #4c1d95 100%);
+    padding: 2.2rem 2.5rem;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #ffffff, #93c5fd, #c4b5fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    font-weight: 400;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Equal Priority Input Cards */
+.input-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 1.5rem;
+    transition: all 0.25s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-card:hover {
+    transform: translateY(-4px);
+    border-color: #3b82f6;
+    box-shadow: 0 12px 20px -5px rgba(37, 99, 235, 0.2);
+}
+
+.badge-tag {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+.badge-audio {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-video {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.badge-document {
+    background: rgba(139, 92, 246, 0.15);
+    color: #a78bfa;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+/* Question and Assessment Cards */
+.question-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.taxonomy-pill {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.pill-remember { background: #3b82f6; color: white; }
+.pill-understand { background: #06b6d4; color: white; }
+.pill-apply { background: #10b981; color: white; }
+.pill-analyze { background: #f59e0b; color: white; }
+.pill-evaluate { background: #ec4899; color: white; }
+.pill-create { background: #8b5cf6; color: white; }
+
+.difficulty-easy { color: #34d399; font-weight: 700; }
+.difficulty-medium { color: #fbbf24; font-weight: 700; }
+.difficulty-hard { color: #f87171; font-weight: 700; }
+
+/* Status callouts */
+.rag-free-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(34, 197, 94, 0.1);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    padding: 0.35rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}

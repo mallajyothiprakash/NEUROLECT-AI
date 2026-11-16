@@ -1,0 +1,45 @@
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Model weights and caches
+data/models_cache/
+.cache/
+huggingface/
+*.safetensors
+*.pt
+*.pth
+*.bin
+
+# Uploaded files and temporary files
+data/uploads/
+data/temp/
+temp/
+uploads/
+
+# Local databases
+data/neurolect.db
+*.sqlite
+*.sqlite3
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Operating system
+.DS_Store
+
+# Logs
+*.log
+
+# IDE
+.idea/
+.vscode/
